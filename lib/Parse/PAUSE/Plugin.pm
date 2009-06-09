@@ -18,7 +18,7 @@ has 'pathname' => (
 );
 
 has 'size' => (
-    is => 'ro', isa => 'Str', writer => '_set_size', init_arg => undef,
+    is => 'ro', isa => 'Int', writer => '_set_size', init_arg => undef,
 );
 
 has 'md5' => (
