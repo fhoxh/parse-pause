@@ -134,7 +134,7 @@ No known incompatibilities.
 
 =head1 BUGS AND LIMITATIONS
 
-Please report any issues to this project's github page.
+Please report any issues to: http://github.com/afoxson/parse-pause/issues
 
 =head1 AUTHOR
 
