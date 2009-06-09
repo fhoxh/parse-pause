@@ -37,11 +37,11 @@ Parse::PAUSE - Parses CPAN upload emails sent by PAUSE
 
   use Parse::PAUSE;
 
-  my $content = 'The uploaded file...'; # hand wave
-  my $parsed  = Parse::PAUSE->parse($content);
+  my $content = 'The uploaded file...'; # body of CPAN upload email from PAUSE
+  my $upload  = Parse::PAUSE->parse($content);
 
-  print $parsed->upload(), "\n"; # Coat-Persistent-0.104.tar.gz
-  print $parsed->entered_by(), "\n"; # SUKRIA (Alexis Sukrieh)
+  print $upload->pathname(), "\n"; # $CPAN/authors/id/S/SU/SUKRIA/Coat-Persistent-0.104.tar.gz
+  print $upload->entered_by(), "\n"; # SUKRIA (Alexis Sukrieh)
 
 =head1 DESCRIPTION
 
