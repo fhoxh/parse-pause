@@ -12,17 +12,17 @@ my $data;
     $data = <DATA>;
 }
 
-my $parsed = Parse::PAUSE->parse($data);
+my $upload = Parse::PAUSE->parse($data);
 
-isa_ok($parsed, 'Parse::PAUSE::Plugin::URL');
-is($parsed->upload(), 'http://voltar.org/PerlModules/Net-IMAP-Simple-1.1800.tar.gz');
-is($parsed->pathname(), '$CPAN/authors/id/J/JE/JETTERO/Net-IMAP-Simple-1.1800.tar.gz');
-is($parsed->size(), 11608);
-is($parsed->md5(), '9518f5e567123f02b8328082df61a4c6');
-is($parsed->entered_by(), 'JETTERO (Paul Miller)');
-is($parsed->entered_on(), 'Fri, 05 Jun 2009 18:14:25 GMT');
-is($parsed->completed(), 'Fri, 05 Jun 2009 18:14:40 GMT');
-is($parsed->paused_version(), 1047);
+isa_ok($upload, 'Parse::PAUSE::Plugin::URL');
+is($upload->upload(), 'http://voltar.org/PerlModules/Net-IMAP-Simple-1.1800.tar.gz');
+is($upload->pathname(), '$CPAN/authors/id/J/JE/JETTERO/Net-IMAP-Simple-1.1800.tar.gz');
+is($upload->size(), 11608);
+is($upload->md5(), '9518f5e567123f02b8328082df61a4c6');
+is($upload->entered_by(), 'JETTERO (Paul Miller)');
+is($upload->entered_on(), 'Fri, 05 Jun 2009 18:14:25 GMT');
+is($upload->completed(), 'Fri, 05 Jun 2009 18:14:40 GMT');
+is($upload->paused_version(), 1047);
 
 __DATA__
 The URL
