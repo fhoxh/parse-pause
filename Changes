@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    Removed a couple of extranous checks (thank you Sartak).
     Migrating from META.json to META.yml.
 
 1.001     2009-06-09 01:46:55 UTC

@@ -13,8 +13,6 @@ sub parse {
         my $parsed_content_obj = $plugin->_process($content);
 
         if (
-            defined $parsed_content_obj and
-            ref $parsed_content_obj and
             blessed $parsed_content_obj and
             $parsed_content_obj->does('Parse::PAUSE::Plugin')
         ) {
