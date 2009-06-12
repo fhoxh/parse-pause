@@ -1,4 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    Migrating from META.json to META.yml.
+
+1.001     2009-06-09 01:46:55 UTC
     Initial release.
